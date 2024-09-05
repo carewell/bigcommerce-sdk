@@ -1,0 +1,33 @@
+{
+  "name": "@carewell/bigcommerce-sdk",
+  "version": "1.0.0",
+  "description": "Additional tooling and packaging around the BigCommerce OpenAPI specs.",
+  "main": "index.js",
+  "directories": {
+    "dist": "dist"
+  },
+  "engines": {
+    "node": ">= 18.0.0"
+  },
+  "scripts": {
+    "preinstall": "./.scripts/npm-setup.sh",
+    "build:types": "ts-node ./.scripts/generate-types.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carewell/bigcommerce-sdk.git"
+  },
+  "keywords": [
+    "lint",
+    "mdx",
+    "eslint",
+    "docs-as-code"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.3.0",
+    "openapi-typescript": "^7.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "author": "Lee Allen <lee.allen@carewell.com>"
+}

@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "composite": true,
+    "baseUrl": ".",
+    "rootDir": "./src",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "inlineSourceMap": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "outDir": "dist"
+  },
+  "include": ["./src/**/*.ts"]
+}
