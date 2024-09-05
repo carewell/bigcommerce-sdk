@@ -2,15 +2,17 @@
   "name": "@carewell/bigcommerce-sdk",
   "version": "1.0.0",
   "description": "Additional tooling and packaging around the BigCommerce OpenAPI specs.",
-  "main": "index.js",
-  "directories": {
-    "dist": "dist"
-  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "UNLICENSED",
+  "directories": {},
+  "files": ["dist"],
   "engines": {
     "node": ">= 18.0.0"
   },
   "scripts": {
     "preinstall": "./.scripts/npm-setup.sh",
+    "build": "npm run build:types && tsc",
     "build:types": "ts-node ./.scripts/generate-types.ts"
   },
   "repository": {
